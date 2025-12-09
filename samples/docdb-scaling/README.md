@@ -21,7 +21,7 @@ Tool performs scaling operations in three simple steps as below and it does not 
    - Recommnedation is to use AWS IAM role if you are running tool from Amazon EC2.
 
 
-## Using the Scale Up/Down Tools
+## Using the Scale Up/Down Tool
 `python3 scaleupdown.py  --cluster-id <cluster-id> --target-instance-type <target-instance-type>  `
 - Provide a valid cluster id - Mandatory
 - Pass a valid instance type - Mandatory
