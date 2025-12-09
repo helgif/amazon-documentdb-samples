@@ -8,7 +8,7 @@ on:
 
 jobs:
   security:
-    uses: ./security-templates/.github/workflows/security-pipeline-template.yml@main
+    uses: helgif/DevSecOps_Pipelines/.github/workflows/security-pipeline-template.yml@main
     with:
       node_version: '20'
       enable_fuzzing: true
