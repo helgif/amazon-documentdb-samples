@@ -1,0 +1,17 @@
+name: Security Pipeline
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main, develop ]
+
+jobs:
+  security:
+    uses: ./security-templates/.github/workflows/security-pipeline-template.yml@main
+    with:
+      node_version: '20'
+      enable_fuzzing: true
+    secrets:
+      SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+      SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
